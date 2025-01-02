@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+/* 定义全局 CSS 变量 */
+:root {
+  /* 主色调 */
+  --primary-color: #D84315; /* 烧橙色 */
+  --secondary-color: #FF7043; /* 珊瑚色 */
+  --background-color: #FFF3E0; /* 柔和的杏色，不透明 */
+  --card-background: #FFECB3; /* 浅黄色 */
+  --button-background: #FFCC80; /* 浅橙色 */
+  --button-hover: #FFB74D; /* 橙色 */
+  --input-background: #FFF8E1; /* 柔和的杏色 */
+  --input-border: #FFECB3; /* 浅黄色 */
+  --modal-background: #FFF3E0; /* 柔和的杏色 */
+  --modal-header-background: #FFECB3; /* 浅黄色 */
+  --modal-footer-background: #FFE0B2; /* 柔和的浅黄色 */
+  --text-color: #5D4037; /* 深棕色 */
+  --absent-color: #E57373; /* 柔和的红色 */
+}
+
+/* 通用样式 */
+body {
+  font-family: 'Roboto', sans-serif; /* 使用正文字体 */
+  /* 设置背景图像 */
+  background-image: url(../src/assets/background.jpg); /* 使用绝对路径 */
+  background-size: cover; /* 使背景图像覆盖整个页面 */
+  background-position: center; /* 背景图像居中显示 */
+  background-repeat: no-repeat; /* 不重复背景图像 */
+  height: 100vh; /* 使 body 高度为视口高度 */
+  margin: 0; /* 移除默认外边距 */
+  position: relative;
+  z-index: 0;
+}
+
+/* 修改 .title 为 .global-title */
+.global-title {
+  text-align: center;
+  color: #fcfbfb; 
+  margin-bottom: 30px;
+  font-size: 3em; /* 增大标题字体 */
+  font-family: 'Great Vibes', cursive; /* 装饰性字体 */
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  padding-bottom: 10px;
+}
+
+.number:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* 确保输入框和选择框有足够对比度 */
+input, select {
+  background: rgba(255, 255, 255, 0.8);
+  color: #000;
+}
+
+input::placeholder {
+  color: #7f8c8d;
+}
